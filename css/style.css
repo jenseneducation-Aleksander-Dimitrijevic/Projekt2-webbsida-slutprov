@@ -46,7 +46,19 @@ h1.main-heading {
 }
 
 h1.main-heading.m-top {
-  padding: 80px 0 4vh 0;
+  padding: 0 0 4vh 0;
+}
+
+#btn-back {
+  margin: 5rem 0 1rem 1rem;
+  background: var(--bg-turkos);
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px 20px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  box-shadow: var(--light-shadow);
 }
 
 body,
@@ -183,6 +195,7 @@ a.btn-links {
 
 .grid-container .grid-item.bg-none .img-content {
   height: 300px;
+  opacity: 0.8;
 }
 
 .grid-container .grid-item.bg-none .img-content#img01 {
@@ -256,8 +269,10 @@ a.btn-links {
 
 .grid-container .grid-item a.btn-links {
   width: 100%;
+  color: var(--color-white);
   display: inline-block;
-  border-color: #111;
+  border-color: var(--bg-turkos);
+  background: var(--bg-turkos);
 }
 
 .footer-container {
@@ -288,6 +303,12 @@ a.btn-links {
 .footer-container ul li i {
   font-size: 1.3rem;
   margin-right: 1rem;
+}
+
+.footer-container ul li:last-child > a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
 }
 
 .footer-container form h3 {
@@ -329,6 +350,7 @@ textarea::placeholder {
   color: #fff;
   width: 150px;
   display: flex;
+  transition: 0.3s;
   font-size: 0.8rem;
   flex-flow: column;
   align-items: center;
@@ -407,9 +429,17 @@ section.copy-content {
 
 /* Laptop Sm */
 @media screen and (min-width: 1024px) {
+  h1.main-heading.m-top {
+    padding: 85px 0 4vh 0;
+  }
+
   .navbar-container ul {
     display: flex;
     list-style: none;
+  }
+
+  #btn-back {
+    display: none;
   }
 
   .navbar-container ul a {
@@ -480,5 +510,9 @@ section.copy-content {
     background: var(--bg-turkos);
     color: var(--color-white);
     border: 1px solid var(--color-turkos);
+  }
+
+  .footer-container a.go-up:hover {
+    transform: translateY(-5px);
   }
 }
