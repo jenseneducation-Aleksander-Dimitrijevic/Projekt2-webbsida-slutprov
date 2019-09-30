@@ -362,6 +362,7 @@ section.copy-content {
   .grid-container .grid-item a.btn-links,
   p {
     width: 50%;
+    margin: 1rem auto 0 auto;
   }
 
   .grid-container .grid-item.bg-none .line-sm {
