@@ -57,8 +57,13 @@ h1.main-heading.m-top {
   padding: 10px;
   border-radius: 5px 20px;
   letter-spacing: 2px;
+  transition: 0.3s;
   color: var(--color-white);
   box-shadow: var(--light-shadow);
+}
+
+#btn-back:hover {
+  opacity: 0.8;
 }
 
 body,
